@@ -2,12 +2,7 @@
 	"folders": [
 		{
 			"path": ".."
-		},
-		{
-			"path": "."
 		}
 	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "cours-html"
-	}
+	"settings": {}
 }
