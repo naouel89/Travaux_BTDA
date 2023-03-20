@@ -2,27 +2,28 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="style.css">
 
-    <form action="destination.php" method="post">
 
-        <body>
-            <img src="images/jarditou_logo.jpg" class="logo" alt="alt">;<sup>Tout le jardin</sup><br><br>
-            <h1>La qualité depuis 70 ans<br><br></h1>
-            <nav><a href="cours-html/Exo_jarditou_html/index.html">Accueil</a>
-            <a href="Tableau.html">Tableau</a>
-            <a href="Contact.html">formulaire</a></nav>
-            <br><br>
-            <img src="images/promotion.jpg" class="image" alt="alt">
-            <br>
-        <li>*Ce champ est obligatoire</li>
-        <br>
-        <fieldset<li>&nbsp;Vos coordonnées</li>
+<body>
+    <img src="images/jarditou_logo.jpg" class="logo" alt="alt">;<sup>Tout le jardin</sup><br><br>
+    <h1>La qualité depuis 70 ans<br><br></h1>
+    <nav><a href="cours-html/Exo_jarditou_html/index.html">Accueil</a>
+        <a href="Tableau.html">Tableau</a>
+        <a href="Contact.html">formulaire</a>
+    </nav>
+    <br><br>
+    <img src="images/promotion.jpg" class="image" alt="alt">
+    <br>
+    <li>*Ce champ est obligatoire</li>
+    <br>
+    <fieldset>
+        <legend>Vos coordonnées :</legend>
         <br>
         <br>
         <label for="nom">Nom:</label><input type="text" name="nom" id="nom">
@@ -34,19 +35,20 @@
         <label for="nom">Sexe*:&nbsp&nbsp</label><input type="radio">Féminim<input &nbsp&nbsp type="radio">Masculin
         <br>
         <br>
-        <li>Date de naissance* &nbsp : </label><input type="date" name="ddn" id="date"
-        <li><label for="nom">Code postal* &nbsp:&nbsp</label><input type="text" name="Code postal" id="Code postal">
+        <li>Date de naissance* &nbsp : </label><input type="date" name="ddn" id="date" <li><label for="nom">Code postal*
+                &nbsp:&nbsp</label><input type="text" name="Code postal" id="Code postal">
         </li>
         <li><label for="nom">Adresse &nbsp:&nbsp</ll><input type="text" name="Adresse" id="Adresse">
         <li><label for="nom">Ville &nbsp:&nbsp</label><input type="text" name="Ville" id="Ville">
         <li><label for="nom">Email* <Email>&nbsp:&nbsp</label><input type="text" placeholder="dave.loper@afpa.fr"
                 name="Email" id="Email">
-        </Email>
-        <br>
-        <br>
-        <br>
-        <li>Votre demande</li>
-        <br>
+            </Email>
+            <br>
+            <br>
+            <br>
+        </fieldset>
+            <fieldset>
+                <legend>Votre demande:</legend>
         <li><label for="nom">sujet*&nbsp;&nbsp;:</label>
             <select name="Sujet">
                 <option>Veuillez sélécionner un sujet</option>
@@ -57,21 +59,27 @@
             </select>
         </li>
         <br></br>
-    
-        <li><label for="nom">Votre question &nbsp: </ll><input type="textarena" name="text" id="text"></li>
+
+        <li><label for="nom">Votre question &nbsp: </ll><input type="text-area"  <-- voir cour--> name="text" id="text"></li>
         </li>
 
         <br>
         <input type="checkbox"><label for="nom">* J'accepte le traitement informatique de ce formulaire</label>
         <br>
-        <br>
-    
-        <button type="sumit">Envoyer</buttobn><button type="sumit">Annuler</buttobn>
-    
-                
-    </form>
+        <br></fieldset>
 
-    
+        <button type="sumit">Envoyer</buttobn><button type="sumit">Annuler</buttobn></button>
+            <br>
+            <br>
+            <nav>
+                <a href="#">Mention légales</a>
+                <a href="#">Horaires</a>
+                <a href="#">Plan du site</a>
+
+            </nav>
+
+
+
 
 
 

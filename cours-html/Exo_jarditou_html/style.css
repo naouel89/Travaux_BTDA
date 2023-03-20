@@ -6,97 +6,116 @@
 
 body {
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 100px;
 }
 
 
+.titre {
+    margin: 25px ;
+}
 
-    nav {
-        background-color: black;
+nav {
+    background-color: black;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    margin: 20px 0 ;
+}
+nav a{
+    margin :0 5px 0 10px ;
+}
+.sup {
+    text-align: right;
+    width: 50%;
+     position: relative;
+    padding-top: 14px;
+    font-size: 28px;
+    margin-left: 40%;
+}
 
-        width: 100%;
-        height: 35px;
-        margin: 0px 0px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        background-position: 0% 100%;
-        background-size: cover;
-        -webkit-background-size: cover;
+h2 {
+    font-size: 40px;
+    margin: 35px 0;
+}
 
-
-    }
-
-    sup {
-        text-align: right;
-        width: 50% position: relative;
-        padding-top: 14px;
-        font-size: 28px;
-        margin-left: 40%;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-.logo{
+.logo {
     width: 250px;
     height: 100px;
 }
-    .image {
-        width: 100%;
-        background-position: 0% 100%;
 
-    }
+.image {
+    width: 100%;
+    background-position: 0% 100%;
 
-    .parent {
-        border: 5px black solid;
-        display: inline-block;
-    }
+}
 
-    .box {
-        display: inline-block;
-        background: rgb(113, 113, 133);
-        width: 100px;
-        height: 100px;
-    }
+.image2 {
+    width: 3%;
+    height: 3%
+}
 
-    text_lien {
-        color: aliceblue;
-    }
 
-    h1 {
+h1 {
+    color: red;
+}
+
+#div_1 {
+    display: flex;
+    max-width: 100%;
+    margin: 2px 2px;
+}
+
+.div_gauche {
+    width: 65%;
+
+}
+.div_gauche h5{
+
+padding: 20px 0;
+margin-bottom: 20px ; 
+text-transform: uppercase;
+text-align: center;
+
+}
+.div_gauche p{
+    text-align:center ;
+    margin-right: 15px;
+}
+.div_droite {
+    width: 35%;
+    position: relative;
+    padding-left: 4px;
+    width: 35%;
+    background-color: #d2d2d2;
+    border: 1px transparent;
+    font-size: 22px;
+}
+
+a {
+    color: white
+}
+
+/*image 768px*/
+@media screen and (max-width: 768px) {
+    h2 {
         color: red;
+        /*exemple de 768*/
+    }
+    nav {
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 15px 0;
+        padding: 15px 0;
+        
     }
 
-    .div_1 {
-        display: flex;
-        max-width: 100%;
-        margin: 2px 2px;
+    .div_gauche{
+        position:relative;
+        width: 100%;
     }
-
-    .div_gauche {
-        width: 65%;
-
-    }
-
-    .div_droite aside {
-        padding: 11px 11px;
-    }
-
     .div_droite {
-        width: 35%;
-        position: relative;
-        padding-left: 4px;
-        margin: 16px 1px;
-        width: 35%;
-        background-color: lightgray;
-        border: 1px transparent;
-        font-size: 22px;
-    }
-
-    a {
-        color: white
-    }
-    /*image 768px*/
-@media screen {
-    
+        display: none;
+        
 }
