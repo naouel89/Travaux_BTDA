@@ -50,12 +50,24 @@ h2 {
 }
 
 .image2 {
-    width: 10%;
+    width: 50%;
+    
 }
+
+table{
+    margin: auto;
+}
+
 tr,
 td,
 th{
     border: 1px solid;
+}
+
+td{
+    width: 400px;
+    height : 100px;
+    text-align: center;
 }
 
 
@@ -121,5 +133,5 @@ a {
     }
     .div_droite {
         display: none;
-        
+        }
 }
