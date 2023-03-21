@@ -50,8 +50,12 @@ h2 {
 }
 
 .image2 {
-    width: 3%;
-    height: 3%
+    width: 10%;
+}
+tr,
+td,
+th{
+    border: 1px solid;
 }
 
 
