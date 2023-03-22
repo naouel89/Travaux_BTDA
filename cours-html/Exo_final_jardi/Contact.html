@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -22,65 +22,61 @@
 
     <img src="images/promotion.jpg" class="image" alt="alt">
 
-    <P>*Ce champ est obligatoire</P>
+    <p>*Ce champ est obligatoire</p>
 
     <fieldset>
-        <legend>Vos coordonnées :</legend>
+        <p>Vos coordonnées :</p>
 
 
         <p><label for="nom">Nom:</label><input type="text" name="nom" id="nom"></p>
 
-        <p><label for="prenom">Prenom:</label><input type="text" name="Prenom" id="Prenom"></p>
+        <p><label for="prenom">Prenom:</label><input type="text" name="Prenom" id="prenom"></p>
 
 
 
         <p><label for="nom">Sexe*:</label><input type="radio">Féminim<input type="radio">Masculin</p>
 
 
-        <p>Date de naissance* : </label><input type="date" name="ddn" id="date" ></p>
-        <label for="nom">Code postal*</label>
-        <input type="text" name="Code postal" id="Code postal">
+        <p>Date de naissance* :<input type="date" name="ddn" id="date"></p>
+        <label for="Code postal">Code postal*</label>
+        <input type="Code postal" name="Code postal" id="Code postal">
         </p>
-        <p><label for="nom">Adresse </p><input type="text" name="Adresse" id="Adresse">
-        <p><label for="nom">Ville </p></label><input type="text" name="Ville" id="Ville">
-        <p><label for="nom">Email* </label>
-            <Email><input type="text" placeholder="dave.loper@afpa.fr"
-                name="Email" id="Email">
-            </Email></p>
+        <p><label for="Adresse">Adresse <input type="text" name="Adresse" id="Adresse"></p>
+        <p><label for="Ville">Ville </label><input type="text" name="Ville" id="Ville"></p>
+        <p><label for="Email">Email* </label>
+        <Email><input type="text" placeholder="dave.loper@afpa.fr" name="Email" id="Email"></Email></p>
 
     </fieldset>
     <fieldset>
         <legend>Votre demande:</legend>
-        <p><label for="nom">sujet*;:</label></p>
-            <select name="Sujet">
-                <option>Veuillez sélécionner un sujet</option>
-                <option>Mes commandes</option>
-                <option>Question sur un produit</option>
-                <option>Réclamation</option>
-                <option>Autres</option>
-            </select>
-        
+        <p><label for="nom">sujet*:</label><select name="Sujet">
+            <option>Veuillez sélécionner un sujet</option>
+            <option>Mes commandes</option>
+            <option>Question sur un produit</option>
+            <option>Réclamation</option>
+            <option>Autres</option>
+        </select>
 
 
-        <p><label for="nom">Votre question </p><input type="text-area" name="text" id="text">
+
+        <p><label for="text-area">Votre question <input type="text-area" name="text-area" id="text-area"></p>
 
 
         <p><input type="checkbox"><label for="nom">* J'accepte le traitement informatique de ce formulaire</label></p>
 
+
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
     </fieldset>
 
-    <button type="sumit">Envoyer</button>
-    <button type="sumit">Annuler</button>
 
+    <nav>
+        <a href="#">Mention légales</a>
+        <a href="#">Horaires</a>
+        <a href="#">Plan du site</a>
 
-
-
-        <nav>
-            <a href="#">Mention légales</a>
-            <a href="#">Horaires</a>
-            <a href="#">Plan du site</a>
-
-        </nav>
+    </nav>
 
 
 
