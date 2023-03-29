@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head><TITLE>Calculatrice</TITLE></HEAD>
+<head><TITLE>OUTILS</TITLE></HEAD>
 
 </head>
 
 <body>
     <script src="phase_7(3).js"></script>
-    
-        <TABLE>
-        <TR>
-            <TD><INPUT type="text" value="nombre 1" name="nb1" size="15"></TD>
-            <td><SELECT name="operateur" size="1" value="choix de l'opérateur">
-                <OPTION value="+"> +</OPTION>
-                <OPTION value="-">-</OPTION>
-                <OPTION value="*">*</OPTION>
-                <OPTION value="/">/</OPTION>
-                </SELECT>
-            </td>
-            <TD><INPUT type="text" value="nombre 2" name="nb2" size="15"></TD>
-            <TD><INPUT type="button" value="=" onclick="rslt();"></TD>
-            <TD><INPUT  name="ecran" size="15" value="0" width="100%"></TD>
-            </TR>
-            </TABLE>
-    
-
+    <form name="calculatrice" action>
+<TABLE>
+<TR>
+    <TD><INPUT type="text" value="nombre 1" name="nb1" size="15"></TD>
+    <td><SELECT name="operateur" size="1" value="choix de l'opérateur">
+        <OPTION value="+"> +</OPTION>
+        <OPTION value="-">-</OPTION>
+        <OPTION value="*">*</OPTION>
+        <OPTION value="/">/</OPTION>
+        </SELECT>
+    </td>
+    <TD><INPUT type="text" value="nombre 2" name="nb2" size="15"></TD>
+    <TD><INPUT type="button" value="=" onclick="rslt();"></TD>
+    <TD><INPUT  name="ecran" size="15" value="0" width="100%"></TD>
+    </TR>
+    </TABLE>
+    </form>
 </body>
 </html>
