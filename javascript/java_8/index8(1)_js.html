@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script src="phase_8(1).js"></script>
     <form>
-        <label for="prenom">Entrez un prénom :</label>
-        <input type="text" id="prenom">
-        <button type="submit">Ajouter</button>
-      </form>
-  
-      <div id="resultat"></div>
-  
-      <script>
-        const prenoms = [];
-  
-        const form = document.querySelector('form');
-        const resultat = document.querySelector('#resultat');
-        form.addEventListener('submit', (event) => {
-          event.preventDefault();
-          const input = document.querySelector('#prenom');
-          const prenom = input.value.trim();
-          if (prenom !== '') {
-            prenoms.push(prenom);
-            input.value = '';
-            input.focus();
-            resultat.innerHTML = `
+      <label for="prenom">Entrez un prénom :</label>
+      <input type="text" id="prenom" />
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <div id="resultat"></div>
+
+    <script>
+      const prenoms = [];
+// <input type="submit" value="Envoyer">
+//<input type="reset" value="Annuler">
+      const form = document.querySelector("form");
+      const resultat = document.querySelector("#resultat");
+      form.addEventListener("submit", (event) => 
+      {
+        event.preventDefault();
+        const input = document.querySelector("#prenom");
+        const prenom = input.value.trim();
+        if (prenom !== "") {
+          prenoms.push(prenom);
+          input.value = "";
+          input.focus();
+          resultat.innerHTML = `
               <p>Nombre de prénoms : ${prenoms.length}</p>
-              <p>Liste des prénoms : ${prenoms.join(', ')}</p>
+              <p>Liste des prénoms : ${prenoms.join(", ")}</p>
             `;
-          }
-        });
-      </script>
-</body>
+        }
+      });
+    </script>
+  </body>
 </html>
