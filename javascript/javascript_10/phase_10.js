@@ -9,9 +9,9 @@ let tableau = new Array(tailleEntiere);
 
 // Remplit le tableau avec les valeurs saisies par l'utilisateur
 for (let i = 0; i < tailleEntiere; i++) {
-  let valeur = prompt(`Entrez la valeur ${i+1} :`);
+  let valeur = prompt(`Entrez la valeur ${i + 1} :`);
   tableau[i] = valeur;
 }
 
 // Affiche le contenu du tableau
-window.alert (tableau);
+window.alert(tableau);
