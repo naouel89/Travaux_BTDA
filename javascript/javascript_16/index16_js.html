@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="phase_16.js"></script>
     <h1>Formulaire de contact</h1>
 	<form name="contactForm" action="processForm.php" method="post" onsubmit="return validateForm()">
 		<label for="societe">Société :</label>
@@ -26,11 +27,20 @@
 		
 		<label for="envTechnique">Environnement technique :</label>
 		<select name="envTechnique" onchange="document.forms['contactForm']['envTechniqueText'].value = this.value;">
-			<option value="">Choisissez une option</option>
-			<option value="HTML/CSS/JS">HTML/CSS/JS</option>
-			<option value="PHP/MySQL">PHP/MySQL</option>
-			<option value="Python/Django">Python/Django</option>
-			<option value="Autre">Autre</option>
+			<option value="">Choisissez</option>
+			<option value="Access">Access</option>
+			<option value="Java">Java</option>
+			<option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Window Nt">Window Nt</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autre...">Autre...</option>
 		</select><br><br>
 		<label for="envTechniqueText">Autre :</label>
 		<textarea name="envTechniqueText"></textarea><br><br>
