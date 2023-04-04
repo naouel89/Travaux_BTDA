@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire de contact</h1>
+	<form name="contactForm" action="processForm.php" method="post" onsubmit="return validateForm()">
+		<label for="societe">Société :</label>
+		<input type="text" name="societe" required><br><br>
+		
+		<label for="personne">Personne à contacter :</label>
+		<input type="text" name="personne" required><br><br>
+		
+		<label for="codePostal">Code postal :</label>
+		<input type="text" name="codePostal" pattern="[0-9]{5}" required><br><br>
+		
+		<label for="ville">Ville :</label>
+		<input type="text" name="ville" required><br><br>
+		
+		<label for="email">Email :</label>
+		<input type="email" name="email" required><br><br>
+		
+		<label for="envTechnique">Environnement technique :</label>
+		<select name="envTechnique" onchange="document.forms['contactForm']['envTechniqueText'].value = this.value;">
+			<option value="">Choisissez une option</option>
+			<option value="HTML/CSS/JS">HTML/CSS/JS</option>
+			<option value="PHP/MySQL">PHP/MySQL</option>
+			<option value="Python/Django">Python/Django</option>
+			<option value="Autre">Autre</option>
+		</select><br><br>
+		<label for="envTechniqueText">Autre :</label>
+		<textarea name="envTechniqueText"></textarea><br><br>
+		
+		<input type="submit" value="Envoyer">
+	</form>
+</body>
+</html>
