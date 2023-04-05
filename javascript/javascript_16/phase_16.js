@@ -1,10 +1,12 @@
-var societe;
-var personne;
-var codePostal;
-var ville;
-var email; 
-
+var societe = document.getElementById("societe").value;
+var personne = document.getElementById("presonne à contacter").value;
+var codePostal = document.getElementById("code postal").value;
+var ville = document.getElementById("ville").value;
+var email = document.getElementById("email").value;
+var telephone = document.getElementById("telephone").value;
+alert ("panpan");
 function validateForm() {
+	
 	// Vérification de la société
 	societe = document.forms["contactForm"]["societe"].value;
 	if (societe == "") {
@@ -35,5 +37,13 @@ function validateForm() {
 		alert("Veuillez saisir un email valide.");
 		return false;
 	}
+	
+	// Vérification de telephone
+	telephone = document.forms["contactForm"]["telephone"].value;
+	if (email == "") {
+		alert("Veuillez saisir un numéro de telephone valide.");
+		return false;
+	}
 	return true;
+
 }
