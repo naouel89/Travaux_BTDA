@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
-
-	</script>
 <body>
     <script src="/javascript/javascript_16/phase_16.js"></script>
     <h1>Formulaire de contact</h1>
@@ -32,7 +29,7 @@
 		<input type="telephone" name="telephone" required><br><br>
 
 		<label for="envTechnique">Environnement technique :</label>
-		<select name="envTechnique" onchange="document.forms['contactForm']['envTechniqueText'].value = this.value;">
+		<select name="envTechnique" onchange="document.forms['contactForm']['envTechniqueText'].value = this.value;"required>
 			<option value="">Choisissez</option>
 			<option value="Access">Access</option>
 			<option value="Java">Java</option>
@@ -51,7 +48,7 @@
 		<label for="envTechniqueText">Autre :</label>
 		<textarea name="envTechniqueText"></textarea><br><br>
 		
-		<button type="submit" id = "envoyer" >envoyer</button><button type="submit">Annuler</buttobn></button>
+		<button type="submit" id = "envoyer" >envoyer</button><button type="reset">Annuler</button>
 	</form>
 </body>
 </html>

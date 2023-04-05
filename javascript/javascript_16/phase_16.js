@@ -45,5 +45,21 @@ function validateForm() {
 		return false;
 	}
 	return true;
-
+	function hideSelectedOption() {
+		var selectBox = document.getElementById("choix");
+		var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+		for (var i = 0; i < selectBox.options.length; i++) {
+			if (selectBox.options[i].value === selectedValue) {
+				selectBox.remove(i);
+				break;
+			}
+		}
+	}
+}
+	const form = document.querySelector('form');
+	form.addEventListener('submit'), (event) => {
+		event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+  function resetForm() {
+	form.reset(); // Réinitialise le formulaire
+  }
 }
