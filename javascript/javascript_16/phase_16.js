@@ -40,12 +40,13 @@ function validateForm() {
 	
 	// Vérification de telephone
 	telephone = document.forms["contactForm"]["telephone"].value;
-	if (email == "") {
+	if (telephone == "") {
 		alert("Veuillez saisir un numéro de telephone valide.");
 		return false;
 	}
 	return true;
-	function hideSelectedOption() {
+}
+function hideSelectedOption() {
 		var selectBox = document.getElementById("choix");
 		var selectedValue = selectBox.options[selectBox.selectedIndex].value;
 		for (var i = 0; i < selectBox.options.length; i++) {
@@ -55,7 +56,6 @@ function validateForm() {
 			}
 		}
 	}
-}
 	const form = document.querySelector('form');
 	form.addEventListener('submit'), (event) => {
 		event.preventDefault(); // Empêche le formulaire de se soumettre normalement
