@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <img src="images/jarditou_logo.jpg" class="logo" alt="alt">
+    <h5>Tout le jardin</h5>
+    <h1>La qualité depuis 70 ans</h1>
+    <nav><a href="index.html">Accueil</a>
+        <a href="Tableau.html">Tableau</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <img src="images/promotion.jpg" class="image" alt="alt">
+
+    <p>*Ce champ est obligatoire</p>
+
+    <fieldset>
+        <p>Vos coordonnées :</p>
+
+
+        <p><label for="nom">Nom:</label><input type="text" name="nom" id="nom"></p>
+
+        <p><label for="prenom">Prenom:</label><input type="text" name="Prenom" id="prenom"></p>
+
+
+
+        <p><label for="nom">Sexe*:</label><input type="radio">Féminim<input type="radio">Masculin</p>
+
+
+        <p>Date de naissance* :<input type="date" name="ddn" id="date"></p>
+        <label for="Code postal">Code postal*</label>
+        <input type="Code postal" name="Code postal" id="Code postal">
+        </p>
+        <p><label for="Adresse">Adresse <input type="text" name="Adresse" id="Adresse"></p>
+        <p><label for="Ville">Ville </label><input type="text" name="Ville" id="Ville"></p>
+        <p><label for="Email">Email* </label>
+        <Email><input type="text" placeholder="dave.loper@afpa.fr" name="Email" id="Email"></Email></p>
+
+    </fieldset>
+    <fieldset>
+        <legend>Votre demande:</legend>
+        <p><label for="nom">sujet*:</label><select name="Sujet">
+            <option>Veuillez sélécionner un sujet</option>
+            <option>Mes commandes</option>
+            <option>Question sur un produit</option>
+            <option>Réclamation</option>
+            <option>Autres</option>
+        </select>
+
+
+
+        <p><label for="text-area">Votre question <input type="text-area" name="text-area" id="text-area"></p>
+
+
+        <p><input type="checkbox"><label for="nom">* J'accepte le traitement informatique de ce formulaire</label></p>
+
+
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </fieldset>
+
+
+    <nav>
+        <a href="#">Mention légales</a>
+        <a href="#">Horaires</a>
+        <a href="#">Plan du site</a>
+
+    </nav>
+    <script src="jarditou_contact.js"></script>
+</body>
+</html>

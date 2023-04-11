@@ -4,7 +4,7 @@ var codePostal = document.getElementById("code postal").value;
 var ville = document.getElementById("ville").value;
 var email = document.getElementById("email").value;
 var telephone = document.getElementById("telephone").value;
-alert ("panpan");
+window.alert ("panpan");
 function validateForm() {
 	
 	// Vérification de la société
