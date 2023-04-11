@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"name": "Portfolio",
+			"path": "../../Portfolio"
 		},
 		{
-			"path": "../../Portfolio"
+			"name": "Travaux_BTDA",
+			"path": ".."
 		}
 	],
 	"settings": {
